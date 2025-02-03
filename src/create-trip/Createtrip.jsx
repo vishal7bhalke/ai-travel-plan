@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
-<<<<<<< HEAD
-
-=======
->>>>>>> d0e2674e4d55ad3cb8f0368c8992fb61fc42a9ca
+import Api from './Api';
 import { AI_PROMPT, SelectBudgetOptions, SelectTravelersList } from '@/constants/option';
 import { toast } from 'sonner';
 import { chatSession } from '@/service/AIModal';
@@ -174,16 +170,7 @@ const GetUserProfile = (tokenInfo) =>{
         {/* Destination Input */}
         <div>
           <h2 className="text-xl my-3 font-medium">What is your destination of choice?</h2>
-          {/* <GooglePlacesAutocomplete
-            apiKey={import.meta.env.VITE_GOOGLE_PLACE_API_KEY}
-            selectProps={{
-              value: place,
-              onChange: (v) => {
-                setPlace(v);
-                console.log(v);
-              },
-            }}
-          /> */}
+        
           <Api placedata={handleplacedata} />
 
         </div>

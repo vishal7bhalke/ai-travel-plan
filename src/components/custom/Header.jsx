@@ -62,11 +62,11 @@ function Header() {
         {user?
         <div className='flex items-center gap-3'>
              <a href='/create-trip'>
-          <Button variant="outline" 
+          <Button onClick={()=> {Navigate('/create-trip')}} variant="outline" 
           className="rounded-full">+Add Trip</Button>
           </a>
           <a href='/my-trips'>
-          <Button variant="outline" 
+          <Button onClick={()=> {Navigate('/my-trips')}} variant="outline" 
           className="rounded-full">MyTrip</Button>
           </a>
           <Popover>
