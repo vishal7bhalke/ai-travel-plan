@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0e2674e4d55ad3cb8f0368c8992fb61fc42a9ca
 import { AI_PROMPT, SelectBudgetOptions, SelectTravelersList } from '@/constants/option';
 import { toast } from 'sonner';
 import { chatSession } from '@/service/AIModal';
