@@ -10,9 +10,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist", // Ensure this matches your Netlify publish directory
-  },
-  server: {
-    historyApiFallback: true, // Ensures client-side routing works
+    outDir: "dist", // Ensure the correct output directory
   },
 });
