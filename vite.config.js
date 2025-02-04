@@ -9,11 +9,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server: {
-    historyApiFallback: true, // Ensures proper routing in dev mode
-  },
   build: {
-    outDir: "dist", // Ensure the correct output directory
+    outDir: "dist", // Ensure this matches your Netlify publish directory
   },
-  base: "/", // Important for deployment
+  server: {
+    historyApiFallback: true, // Ensures client-side routing works
+  },
 });
